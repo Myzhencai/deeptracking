@@ -16,7 +16,7 @@ Please refer the odt files for more details about this project (installation ,da
 There should have everything you need for the project including setup the environment , make up json , download dataset and some issues you might meet 
 when running the project(there should be a plyparser issue in my develop repo which is what I am dealing with it.Just as a suggestion ,you might need
 try some different version and diffrent installation ways of plyfile to have a test of it .Making plyparser work is just important than everything as 
-other thing I have shared the details.Tested in ubuntu14.4.5,python3.4 as default.)
+other thing I have shared the details.Tested in ubuntu14.4.5,python3.4 as default.)BTW,you can also refer the wiki to install everything and have a glance of the whole project:https://github.com/Myzhencai/deeptracking/wiki
 
 ### Warnings
 This project use python3 and Gpu with cuda cause there have the cnn etc.And I just installed the pytorch from source after I installed 
