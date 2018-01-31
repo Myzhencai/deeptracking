@@ -7,6 +7,7 @@
 __author__ = "Mathieu Garon"
 __version__ = "0.0.1"
 
+from plyfile import PlyData, PlyElement
 import os
 import numpy as np
 from PIL import Image
@@ -15,15 +16,7 @@ from PIL import Image
 class PlyParser:
     def __init__(self, path):
         self.path = path
-
-        # data.comments[TextureFile] is the path to texture
-        # data.data[[x, y, z]] vertex array
-        # data.data[[nx, ny, nz]] normal array
-        # data.data[[red, green, blue]] color array
-        # data.data[[texture_u, texture_v]] texture map
-        # data.data[[vertex_indices]] faces
-        # Format compatible with plyfile package
-        raise NotImplementedError("Implement load data from ply file")
+        self.data = PlyData.read(path)
 
     def get_texture(self):
         for comment in self.data.comments:
@@ -90,5 +83,5 @@ class PlyParser:
         vertex['x'] = points[:, 0]
         vertex['y'] = points[:, 1]
         vertex['z'] = points[:, 2]
-
-        raise NotImplementedError("Implement Save data to ply file")
+        el = PlyElement.describe(vertex, 'vertex')
+        PlyData([el], text=ascii).write(path)
