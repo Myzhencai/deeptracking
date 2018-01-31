@@ -11,6 +11,17 @@ TODO: update with the more recent pytorch framework...
 
 The datasets and 3D models from the paper can be found [Here](http://vision.gel.ulaval.ca/~jflalonde/projects/deepTracking/index.html).
 
+### Dependences installation
+Please refer the odt files for more details about this project (installation ,dataset ,file change etc.)
+There should have everything you need for the project including setup the environment , make up json , download dataset and some issues you might meet 
+when running the project(there should be a plyparser issue in my develop repo which is what I am dealing with it.Just as a suggestion ,you might need
+try some different version and diffrent installation ways of plyfile to have a test of it .Making plyparser work is just important than everything as 
+other thing I have shared the details.Tested in ubuntu14.4.5,python3.4 as default.)
+
+### Warnings
+This project use python3 and Gpu with cuda cause there have the cnn etc.And I just installed the pytorch from source after I installed 
+Hugh Perkins's [pytorch](https://github.com/hughperkins/pytorch),I do not know if it is neccessary so I did not mention it in the details_of_project
+folder.
 
 ## Generating data
 ### Generating synthetic data
