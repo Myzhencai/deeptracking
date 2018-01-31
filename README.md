@@ -20,8 +20,7 @@ other thing I have shared the details.Tested in ubuntu14.4.5,python3.4 as defaul
 
 ### Warnings
 This project use python3 and Gpu with cuda cause there have the cnn etc.And I just installed the pytorch from source after I installed 
-Hugh Perkins's [pytorch](https://github.com/hughperkins/pytorch),I do not know if it is neccessary so I did not mention it in the details_of_project
-folder.
+Hugh Perkins's [pytorch](https://github.com/hughperkins/pytorch),I do not know if it is neccessary so I did not mention it in the odt files.
 
 ## Generating data
 ### Generating synthetic data
