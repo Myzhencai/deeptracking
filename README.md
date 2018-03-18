@@ -2,7 +2,7 @@
 
 Torch + python implementation of [Deep 6-DOF Tracking](https://arxiv.org/abs/1703.09771)
 
-Note that a docker file is available
+Note that a docker file is available and a docker image is upload to the dockerhub but it can not generate a window for generating data so it can only used for training.
 
 The code to parse a ply file is not provided, this framework needs an implementation of [plyparser.py](https://github.com/lvsn/deeptracking/blob/develop/deeptracking/utils/plyparser.py)
 
